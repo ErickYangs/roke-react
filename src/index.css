@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.ant-layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ant-layout-header .logo {
+  display: none;;
+}
+
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+  color: #1890ff;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}

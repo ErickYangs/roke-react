@@ -4,6 +4,7 @@ import homeClass from './home.module.scss'
 import IndexWrap from '../../components/module/Index/IndexWrap'
 import MovieWrap from '../../components/module/Movie/Movie'
 import AboutWrap from '../../components/module/About/About'
+import { Button } from 'antd'
 
 // import * as Http from '../../api/movies'
 import fetchJsonp from 'fetch-jsonp'
@@ -58,7 +59,7 @@ export class HomeView extends Component {
               style={{ lineHeight: '64px' }}
             >
               <Menu.Item key="home">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
               </Menu.Item>
               <Menu.Item key="movie">
                 <Link to="/movie">Add-ons</Link>
@@ -67,10 +68,18 @@ export class HomeView extends Component {
                 <Link to="/about">Apps</Link>
               </Menu.Item>
             </Menu>
+            <Button
+              type="primary"
+              onClick={() => {
+                this.toLogin()
+              }}
+            >
+              Login
+            </Button>
           </Header>
           <Content style={{ padding: '0 50px' }}>
             <div className="content_layout">
-              <Route exact path="/home" component={IndexWrap}></Route>
+              <Route exact path="/" component={IndexWrap}></Route>
               <Route path="/movie" component={MovieWrap}></Route>
               <Route path="/about" component={AboutWrap}></Route>
             </div>
@@ -91,6 +100,11 @@ export class HomeView extends Component {
       .then(res => {
         console.log(res)
       })
+  }
+
+  toLogin() {
+    console.log(this.props)
+    this.props.history.push('/login')
   }
 }
 
