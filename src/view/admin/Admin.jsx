@@ -5,6 +5,7 @@ import { Row, Col } from 'antd'
 import Header from '../../components/header/HeaderWrap'
 import Footer from '../../components/footer/FooterWrap'
 import NavLeft from '../../components/navLeft'
+import Home from '../home'
 
 export class AdminWrap extends Component {
   render() {
@@ -15,7 +16,9 @@ export class AdminWrap extends Component {
         </Col>
         <Col span={21} className="main">
           <Header></Header>
-          <Row className="content">Content</Row>
+          <Row className="content">
+            <Home></Home>
+          </Row>
           <Footer></Footer>
         </Col>
       </Row>

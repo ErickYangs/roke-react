@@ -3,8 +3,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: 'PingFangSC-Regular', 'Microsoft YaHei', '微软雅黑', 'Arial',
-    '黑体', sans-serif;
+  font-family: 'Roboto', 'PingFang SC Bold', 'PingFang SC', 'Microsoft Yahei',
+    Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -234,12 +234,18 @@ table {
     min-width: 180px;
     height: calc(100vh);
   }
-  .mian {
+  .main {
     flex: 1;
     height: calc(100vh);
+    display: flex !important;
+    justify-content: flex-start;
+    flex-direction: column;;
   }
   .content {
     position: relative;
     padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    background: #fafafa;
   }
 }
