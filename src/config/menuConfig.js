@@ -33,19 +33,14 @@ export default [
 
     children: [
       {
-        title: 'Basic Form',
-        key: '/admin/from/basicform',
+        title: 'Login Form',
+        key: '/admin/from/loginform',
         type: 'history'
       },
       {
-        title: 'Step Form',
-        key: '/admin/from/stepform',
+        title: 'Register Form',
+        key: '/admin/from/registerform',
         type: 'man'
-      },
-      {
-        title: 'Advanced Form',
-        key: '/admin/from/advancedfrom',
-        type: 'sync'
       }
     ]
   },

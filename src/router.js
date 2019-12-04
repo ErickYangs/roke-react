@@ -8,6 +8,8 @@ import LoginWrap from './components/login'
 import RegisterWrap from './components/register'
 import ButtonWrap from './components/ui/button'
 import ErrorPage from './components/nomatch'
+// Form
+import LoginForm from './components/form/login'
 
 export default class IRouter extends React.Component {
   render() {
@@ -23,6 +25,10 @@ export default class IRouter extends React.Component {
                   <Route
                     path="/admin/ui/buttons"
                     component={ButtonWrap}
+                  ></Route>
+                  <Route
+                    path="/admin/from/loginform"
+                    component={LoginForm}
                   ></Route>
                   <Route component={ErrorPage}></Route>
                 </Switch>
