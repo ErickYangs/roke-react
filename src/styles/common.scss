@@ -226,3 +226,20 @@ table {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.container {
+  display: flex;
+  .nav_left {
+    // width: 15%;
+    min-width: 180px;
+    height: calc(100vh);
+  }
+  .mian {
+    flex: 1;
+    height: calc(100vh);
+  }
+  .content {
+    position: relative;
+    padding: 20px;
+  }
+}

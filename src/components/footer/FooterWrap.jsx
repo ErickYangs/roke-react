@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class AboutWrap extends Component {
+export class FooterWrap extends Component {
     render() {
         return (
             <div>
-                AboutWrap
+                FooterWrap
             </div>
         )
     }
 }
 
-export default AboutWrap
+export default FooterWrap
