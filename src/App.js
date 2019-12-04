@@ -21,10 +21,10 @@ export default class App extends Component {
     return (
       <Router>
         <Route path="/" exact component={HomeView}></Route>
-          <AccountWrap>
+        <AccountWrap>
           <Route path="/login" exact component={LoginWrap} />
-            <Route path="/register" exact component={RegisterWrap} />
-          </AccountWrap>
+          <Route path="/register" exact component={RegisterWrap} />
+        </AccountWrap>
       </Router>
     )
   }
