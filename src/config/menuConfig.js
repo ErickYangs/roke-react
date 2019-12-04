@@ -2,25 +2,27 @@ export default [
   {
     title: 'Home',
     key: '/admin/home',
-    type: 'wallet',
-    children: []
+    type: 'wallet'
   },
   {
-    title: 'UI',
+    title: 'UI', 
     key: '/admin/ui',
     type: 'setting',
     children: [
       {
         title: 'Button',
-        key: '/admin/ui/buttons'
+        key: '/admin/ui/buttons',
+        type: 'exception'
       },
       {
         title: 'Dialog',
-        key: '/admin/ui/modals'
+        key: '/admin/ui/modals',
+        type: 'inbox'
       },
       {
         title: 'Loading',
-        key: '/admin/ui/loading'
+        key: '/admin/ui/loading',
+        type: 'key'
       }
     ]
   },
@@ -31,16 +33,19 @@ export default [
 
     children: [
       {
-        title: 'Button',
-        key: '/admin/ui/buttons'
+        title: 'Basic Form',
+        key: '/admin/from/basicform',
+        type: 'history'
       },
       {
-        title: 'Dialog',
-        key: '/admin/ui/modals'
+        title: 'Step Form',
+        key: '/admin/from/stepform',
+        type: 'man'
       },
       {
-        title: 'Loading',
-        key: '/admin/ui/loading'
+        title: 'Advanced Form',
+        key: '/admin/from/advancedfrom',
+        type: 'sync'
       }
     ]
   },
@@ -50,16 +55,19 @@ export default [
     type: 'table',
     children: [
       {
-        title: 'Button',
-        key: '/admin/ui/buttons'
+        title: 'Table List',
+        key: '/admin/table/tablelist',
+        type: 'qrcode'
       },
       {
-        title: 'Dialog',
-        key: '/admin/ui/modals'
+        title: 'Basic List',
+        key: '/admin/table/basiclist',
+        type: 'shake'
       },
       {
-        title: 'Loading',
-        key: '/admin/ui/loading'
+        title: 'Card List',
+        key: '/admin/table/cardlist',
+        type: 'pound'
       }
     ]
   },
@@ -69,8 +77,9 @@ export default [
     type: 'lock',
     children: [
       {
-        title: 'Button',
-        key: '/admin/ui/buttons'
+        title: 'Details',
+        key: '/admin/fullpage/detail',
+        type: 'global'
       }
     ]
   }

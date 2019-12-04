@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CssWrap from './index.module.scss'
 import MenuConfig from '../../config/menuConfig'
+import { NavLink } from 'react-router-dom'
 
 import { Menu, Icon } from 'antd'
 const { SubMenu } = Menu
@@ -38,7 +39,11 @@ export class NavLeft extends Component {
       }
       return (
         <Menu.Item title={item.title} key={item.key}>
-          {item.title}
+          <NavLink to={item.key}>
+            <Icon type={item.type} />
+
+            <span>{item.title}</span>
+          </NavLink>
         </Menu.Item>
       )
     })

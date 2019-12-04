@@ -4,7 +4,7 @@ export class HomeIndex extends Component {
     render() {
         return (
             <div className={HomeCss.home_wrap}>
-                Have fun. Stay cool. Change the world!
+                {this.props.children}
             </div>
         )
     }

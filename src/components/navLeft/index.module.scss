@@ -16,7 +16,9 @@
       cursor: pointer;
     }
   }
-  div {
-    color: #fff !important;
+  div,
+  i,
+  span, a {
+    color: rgba(255, 255, 255, 0.8) !important;
   }
 }

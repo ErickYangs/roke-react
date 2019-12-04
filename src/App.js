@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './App.css'
 import './styles/common.scss'
 // import { Route, BrowserRouter as Router } from 'react-router-dom'
-import AdminWrap from './view/admin/Admin'
 
 export default class App extends Component {
   // constructor(props) {
@@ -11,7 +10,8 @@ export default class App extends Component {
   render() {
     return (
       <div id="App">
-        <AdminWrap></AdminWrap>
+        {/* <AdminWrap></AdminWrap> */}
+        {this.props.children}
       </div>
     )
   }
