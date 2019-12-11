@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class AboutWrap extends Component {
+export class Errorindex extends Component {
     render() {
         return (
             <div>
-                AboutWrap
+                Oops. This page seems to be missing…
             </div>
         )
     }
 }
 
-export default AboutWrap
+export default Errorindex

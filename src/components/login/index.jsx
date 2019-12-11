@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 
-export class MovieWrap extends Component {
+export class LoginIndex extends Component {
     render() {
-        // console.log(this.props)
-
         return (
             <div>
-                MovieWrap
+               LoginIndex 
             </div>
         )
     }
 }
 
-export default MovieWrap
+export default LoginIndex
